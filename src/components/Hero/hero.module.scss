@@ -1,0 +1,27 @@
+.hero {
+    background-image: url("../../assets/MainPage/hero/bg.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Trajan Pro';
+    color: white;
+
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.15em;
+
+        
+    }
+}

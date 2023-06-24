@@ -1,0 +1,41 @@
+.wrapper {
+	margin: 80px 20px;
+	.title {
+		text-align: center;
+		margin-bottom: 40px;
+		img {
+			width: 100%;
+		}
+	}
+	.swiper {
+		margin: 0 150px;
+		@media only screen and (max-width: 600px) {
+			margin: 0;
+		}
+		&__img {
+			width: 100%;
+			height: 100%;
+		}
+		&__text {
+			margin-top: 40px;
+			text-align: center;
+			color: #494949;
+
+			p {
+				&:nth-child(1) {
+					font-size: 36px;
+				}
+			}
+		}
+		&__navigation {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			bottom: 72px;
+			cursor: pointer;
+			@media only screen and (max-width: 600px) {
+			bottom: 0;
+			}
+		}
+	}
+}

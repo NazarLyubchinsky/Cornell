@@ -1,0 +1,130 @@
+.specials {
+	&__top {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__bottom {
+		.banner {
+			margin-top: 144px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 24px;
+			padding: 0 160px;
+			color: #213357;
+			@media only screen and (max-width: 1200px) {
+				padding: 0 80px;
+			}
+			@media only screen and (max-width: 992px) {
+				padding: 0 40px;
+			}
+			@media only screen and (max-width: 768px) {
+				padding: 0 15px;
+			}
+			@media only screen and (max-width: 576px) {
+				margin-top: 60px;
+			}
+			&__img {
+				width: 100%;
+			}
+			&__title {
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 36px;
+				@media only screen and (max-width: 992px) {
+					font-size: 30px;
+				}
+				@media only screen and (max-width: 768px) {
+					font-size: 24px;
+				}
+				@media only screen and (max-width: 576px) {
+					font-size: 19px;
+				}
+			}
+			&__subtitle {
+				font-weight: 400;
+				font-size: 16px;
+			}
+		}
+		.cards {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 24px;
+			padding: 0 12px;
+			margin-bottom: 96px;
+			margin-top: 144px;
+			@media only screen and (max-width: 992px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@media only screen and (max-width: 650px) {
+				grid-template-columns: repeat(1, 1fr);
+			}
+			@media only screen and (max-width: 576px) {
+				margin-top: 60px;
+			}
+			.card {
+				border-bottom: 2px solid #c8bd90;
+				&__img {
+					width: 100%;
+					object-fit: cover;
+				}
+				&__content {
+					padding: 0 48px;
+					background: #f6f1f1;
+					@media only screen and (max-width: 1200px) {
+						padding: 0 15px;
+						text-align: center;
+					}
+					@media only screen and (max-width: 992px) {
+						text-align: start;
+					}
+					@media only screen and (max-width: 768px) {
+						text-align: center;
+					}
+					@media only screen and (max-width: 576px) {
+						text-align: start;
+					}
+					h4 {
+						padding-top: 48px;
+						font-weight: 400;
+						font-size: 24px;
+						line-height: 32px;
+						color: #213357;
+						@media only screen and (max-width: 768px) {
+							font-size: 20px;
+						}
+					}
+					p {
+						margin-top: 24px;
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 28px;
+						color: #494949;
+					}
+					button {
+						margin-top: 64px;
+						margin-bottom: 47px;
+						width: 200px;
+						background: #c8bd90;
+						border: none;
+						color: #fff;
+						font-weight: 500;
+						font-size: 14px;
+						letter-spacing: 0.05em;
+						padding: 13px 48px;
+						transition: background 0.6s ease;
+						@media only screen and (max-width: 1200px) {
+							margin-top: 44px;
+						}
+						&:hover {
+							background: #d8c67c;
+						}
+					}
+				}
+			}
+		}
+	}
+}
